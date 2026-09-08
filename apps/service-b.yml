@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: service-b
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/jitukiwis22/gitops-test.git
+    targetRevision: master
+    path: services/service-b
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: service-b
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+    syncOptions:
+      - CreateNamespace=true

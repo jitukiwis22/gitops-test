@@ -1,0 +1,11 @@
+
+
+appName: serviceB
+
+port: 81
+
+namespace: default
+
+image:
+  name: jitukiwis/spring-action-test
+  tag: 1.0.1

@@ -1,0 +1,11 @@
+
+
+appName: serviceA
+
+port: 80
+
+namespace: default
+
+image:
+  name: jitukiwis/service-a
+  tag: 1.0.1
