@@ -10,7 +10,7 @@ spec:
 
   source:
     repoURL: https://github.com/jitukiwis22/gitops-test.git
-    targetRevision: HEAD
+    targetRevision: master
     path: services/service-a
 
   destination:
