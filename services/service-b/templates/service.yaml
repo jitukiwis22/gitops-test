@@ -11,7 +11,7 @@ spec:
     targetPort: 81
     nodePort: 30081
     protocol: TCP
-    name: serviceB
+    name: "service-b"
   selector:
     app: {{ .Values.appName }}
     tier: backend
