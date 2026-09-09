@@ -7,9 +7,9 @@ metadata:
     app: {{ .Values.appName }}
 spec:
   ports:
-  - port: 81
-    targetPort: 81
-    nodePort: 30081
+  - port: 8080
+    targetPort: 8080
+    nodePort: 30080
     protocol: TCP
     name: "service-b"
   selector:
